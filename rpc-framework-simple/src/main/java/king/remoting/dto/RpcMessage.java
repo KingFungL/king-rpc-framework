@@ -34,4 +34,5 @@ public class RpcMessage {
      * request data
      */
     private Object data;
+
 }

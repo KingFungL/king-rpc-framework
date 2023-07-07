@@ -11,7 +11,7 @@ import org.slf4j.LoggerFactory;
 
 /**
  * @author King
- * @Description:
+ * @Description: 用于处理服务器发送的数据
  */
 public class NettyClientHandler extends ChannelInboundHandlerAdapter {
     private static final Logger logger = LoggerFactory.getLogger(NettyClientHandler.class);

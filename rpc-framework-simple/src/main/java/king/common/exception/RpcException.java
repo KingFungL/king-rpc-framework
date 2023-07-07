@@ -1,6 +1,7 @@
 package king.common.exception;
 
-import github.javaguide.enums.RpcErrorMessageEnum;
+
+import king.common.enums.RpcErrorMessageEnum;
 
 /**
  * @author shuang.kou
