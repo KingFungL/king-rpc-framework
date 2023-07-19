@@ -1,4 +1,4 @@
-package github.javaguide.utils.concurrent.threadpool;
+package king.utils.concurrent.threadpool;
 
 import lombok.Getter;
 import lombok.Setter;

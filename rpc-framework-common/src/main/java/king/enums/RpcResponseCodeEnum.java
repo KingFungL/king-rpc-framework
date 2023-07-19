@@ -1,4 +1,4 @@
-package github.javaguide.enums;
+package king.enums;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;

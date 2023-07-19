@@ -1,4 +1,4 @@
-package github.javaguide.exception;
+package king.exception;
 
 /**
  * @author shuang.kou

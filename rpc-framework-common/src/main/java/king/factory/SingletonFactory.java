@@ -1,4 +1,4 @@
-package github.javaguide.factory;
+package king.factory;
 
 import java.lang.reflect.InvocationTargetException;
 import java.util.Map;

@@ -1,4 +1,4 @@
-package github.javaguide.extension;
+package king.extension;
 
 public class Holder<T> {
 

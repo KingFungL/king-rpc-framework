@@ -1,4 +1,4 @@
-package github.javaguide.utils;
+package king.utils;
 
 /**
  * String 工具类

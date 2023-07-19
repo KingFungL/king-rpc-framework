@@ -1,6 +1,6 @@
-package github.javaguide.exception;
+package king.exception;
 
-import github.javaguide.enums.RpcErrorMessageEnum;
+import king.enums.RpcErrorMessageEnum;
 
 /**
  * @author shuang.kou

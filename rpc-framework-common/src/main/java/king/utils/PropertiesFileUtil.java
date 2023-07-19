@@ -1,4 +1,4 @@
-package github.javaguide.utils;
+package king.utils;
 
 import lombok.extern.slf4j.Slf4j;
 
