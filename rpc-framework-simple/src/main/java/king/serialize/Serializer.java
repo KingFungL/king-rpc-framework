@@ -1,7 +1,6 @@
 package king.serialize;
 
 
-import king.common.extension.SPI;
 
 /**
  * 序列化接口，所有序列化类都要实现这个接口

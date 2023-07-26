@@ -1,8 +1,5 @@
 package king.compress;
 
-
-import king.common.extension.SPI;
-
 /**
  * @author wangtao .
  * @createTime on 2020/10/3
