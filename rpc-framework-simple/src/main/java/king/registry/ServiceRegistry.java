@@ -1,6 +1,6 @@
 package king.registry;
 
-import king.common.extension.SPI;
+import king.extension.SPI;
 
 import java.net.InetSocketAddress;
 

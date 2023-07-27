@@ -1,26 +1,21 @@
 package king.registry.zk;
 
-import github.javaguide.enums.LoadBalanceEnum;
-import github.javaguide.enums.RpcErrorMessageEnum;
-import github.javaguide.exception.RpcException;
-import github.javaguide.extension.ExtensionLoader;
-import github.javaguide.loadbalance.LoadBalance;
-import github.javaguide.registry.ServiceDiscovery;
-import github.javaguide.registry.zk.util.CuratorUtils;
-import github.javaguide.remoting.dto.RpcRequest;
-import github.javaguide.utils.CollectionUtil;
+
+import king.enums.LoadBalanceEnum;
+import king.enums.RpcErrorMessageEnum;
+import king.exception.RpcException;
+import king.extension.ExtensionLoader;
+import king.loadbalance.LoadBalance;
+import king.registry.ServiceDiscovery;
+import king.registry.zk.util.CuratorUtils;
+import king.remoting.dto.RpcRequest;
+import king.utils.CollectionUtil;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.curator.framework.CuratorFramework;
 
 import java.net.InetSocketAddress;
 import java.util.List;
 
-/**
- * service discovery based on zookeeper
- *
- * @author shuang.kou
- * @createTime 2020年06月01日 15:16:00
- */
 @Slf4j
 public class ZkServiceDiscoveryImpl implements ServiceDiscovery {
     private final LoadBalance loadBalance;

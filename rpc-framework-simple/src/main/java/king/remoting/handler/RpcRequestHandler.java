@@ -1,7 +1,7 @@
 package king.remoting.handler;
 
-import king.common.exception.RpcException;
-import king.common.factory.SingletonFactory;
+import king.exception.RpcException;
+import king.factory.SingletonFactory;
 import king.provider.ServiceProvider;
 import king.provider.impl.ZkServiceProviderImpl;
 import king.remoting.dto.RpcRequest;

@@ -1,7 +1,7 @@
 package king.registry;
 
-import github.javaguide.extension.SPI;
-import github.javaguide.remoting.dto.RpcRequest;
+import king.extension.SPI;
+import king.remoting.dto.RpcRequest;
 
 import java.net.InetSocketAddress;
 

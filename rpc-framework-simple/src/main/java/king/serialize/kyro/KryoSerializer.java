@@ -4,6 +4,7 @@ import com.esotericsoftware.kryo.Kryo;
 import com.esotericsoftware.kryo.io.Input;
 import com.esotericsoftware.kryo.io.Output;
 import king.common.exception.SerializeException;
+import king.exception.SerializeException;
 import king.remoting.dto.RpcRequest;
 import king.remoting.dto.RpcResponse;
 import king.serialize.Serializer;

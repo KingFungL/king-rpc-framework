@@ -1,6 +1,6 @@
 package king.remoting.dto;
 
-import king.common.enums.RpcResponseCodeEnum;
+import king.enums.RpcResponseCodeEnum;
 import lombok.*;
 
 import java.io.Serializable;
