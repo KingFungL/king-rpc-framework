@@ -3,7 +3,7 @@ package king.serialize.hessian;
 
 import com.caucho.hessian.io.HessianInput;
 import com.caucho.hessian.io.HessianOutput;
-import king.common.exception.SerializeException;
+import king.exception.SerializeException;
 import king.serialize.Serializer;
 
 import java.io.ByteArrayInputStream;

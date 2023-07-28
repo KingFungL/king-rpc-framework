@@ -74,6 +74,8 @@
         <module>example-client</module>
         <module>rpc-framework-simple</module>
         <module>rpc-framework-common</module>
+        <module>hello-service-api</module>
+        <module>example-server</module>
     </modules>
     
 </project>

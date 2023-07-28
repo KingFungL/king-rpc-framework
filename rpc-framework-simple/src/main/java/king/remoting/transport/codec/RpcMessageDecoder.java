@@ -3,10 +3,11 @@ package king.remoting.transport.codec;
 import io.netty.buffer.ByteBuf;
 import io.netty.channel.ChannelHandlerContext;
 import io.netty.handler.codec.LengthFieldBasedFrameDecoder;
-import king.common.enums.CompressTypeEnum;
-import king.common.enums.SerializationTypeEnum;
-import king.common.extension.ExtensionLoader;
+
 import king.compress.Compress;
+import king.enums.CompressTypeEnum;
+import king.enums.SerializationTypeEnum;
+import king.extension.ExtensionLoader;
 import king.remoting.constants.RpcConstants;
 import king.remoting.dto.RpcMessage;
 import king.remoting.dto.RpcRequest;

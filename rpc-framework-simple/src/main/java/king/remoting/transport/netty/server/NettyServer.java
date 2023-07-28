@@ -1,8 +1,5 @@
 package king.remoting.transport.netty.server;
 
-
-import com.sun.org.slf4j.internal.Logger;
-import com.sun.org.slf4j.internal.LoggerFactory;
 import io.netty.bootstrap.ServerBootstrap;
 import io.netty.channel.ChannelFuture;
 import io.netty.channel.ChannelInitializer;
@@ -15,16 +12,19 @@ import io.netty.handler.logging.LogLevel;
 import io.netty.handler.logging.LoggingHandler;
 import king.remoting.dto.RpcRequest;
 import king.remoting.dto.RpcResponse;
-import king.remoting.handler.NettyClientHandler;
 import king.remoting.handler.NettyServerHandler;
 import king.remoting.transport.codec.NettyKryoDecoder;
 import king.remoting.transport.codec.NettyKryoEncoder;
 import king.serialize.kyro.KryoSerializer;
+import lombok.extern.slf4j.Slf4j;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 /**
  * @author King
  * @Description:
  */
+@Slf4j
 public class NettyServer {
     private final static Logger logger = LoggerFactory.getLogger(NettyServer.class);
     private final int port;

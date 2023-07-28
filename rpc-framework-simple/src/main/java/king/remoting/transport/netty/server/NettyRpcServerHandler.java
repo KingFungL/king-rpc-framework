@@ -6,10 +6,11 @@ import io.netty.channel.ChannelInboundHandlerAdapter;
 import io.netty.handler.timeout.IdleState;
 import io.netty.handler.timeout.IdleStateEvent;
 import io.netty.util.ReferenceCountUtil;
-import king.common.enums.CompressTypeEnum;
-import king.common.enums.RpcResponseCodeEnum;
-import king.common.enums.SerializationTypeEnum;
-import king.common.factory.SingletonFactory;
+
+import king.enums.CompressTypeEnum;
+import king.enums.RpcResponseCodeEnum;
+import king.enums.SerializationTypeEnum;
+import king.factory.SingletonFactory;
 import king.remoting.constants.RpcConstants;
 import king.remoting.dto.RpcMessage;
 import king.remoting.dto.RpcRequest;
