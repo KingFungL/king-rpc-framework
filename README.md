@@ -2,17 +2,20 @@
 
 ### 介绍
 King-RPC-framework是一款基于 Netty+Kyro+Zookeeper 实现的 RPC 框架。架构示意图如下：
+
 ![](./images/rpc-architure-detail.png)
+
 服务提供端 Server 向注册中心注册服务，服务消费者 Client 通过注册中心拿到服务相关信息，然后再通过网络请求服务提供端 Server。
 
 
-### 项目完成点
-1. **使用 Netty（基于 NIO）替代 BIO 实现网络传输；**
-2. **使用开源的序列化机制 Kyro替代 JDK 自带的序列化机制；**
-3. **使用 Zookeeper 管理相关服务地址信息**
+### 项目亮点
+1. **使用 Netty（基于 NIO）实现网络传输，重用 Channel 避免重复连接服务端，增加 Netty 心跳机制保证客户端和服务端的连接不被断掉，避免重连；**
+2. **使用开源的 Kyro 实现序列化，集合了其他序列化机制hessian、protostuff；**
+3. **使用 Zookeeper 作为注册中心管理相关服务地址信息**
 4. **客户端调用远程服务的时候进行负载均衡** ：调用服务的时候，从很多服务地址中根据相应的负载均衡算法选取一个服务地址。目前实现了随机和轮询负载均衡算法、一致性哈希算法。
 5. **集成 Spring 通过注解注册服务**,**集成 Spring 通过注解进行服务消费** 。
-
+6. **加入SPI机制**
+7. **使用 CompletableFuture 包装接受客户端返回结果**
 
 ### 安装教程
 
@@ -77,7 +80,7 @@ public class HelloServiceImpl2 implements HelloService {
 /**
  * Server: Automatic registration service via @RpcService annotation
  */
-@RpcScan(basePackage = {"github.javaguide.serviceimpl"})
+@RpcScan(basePackage = {"king.serviceimpl"})
 public class NettyServerMain {
     public static void main(String[] args) {
         // Register service via annotation
